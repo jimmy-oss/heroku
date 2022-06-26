@@ -47,7 +47,7 @@ web: gunicorn your_project_name.wsgi --log-file -
 ## Runtime.txt
 This file contains the python version you are using for heroku to use, create `runtime.txt` in your project root and add your python version in the following format
 ```
-python-3.6.4
+python-3.8.10
 ```
 List of [Heroku Python Runtimes](https://devcenter.heroku.com/articles/python-runtimes).
 
@@ -100,15 +100,15 @@ Make sure you have the following packages if not install the using pip then run 
 ```
 config==0.3.9
 dj-database-url==0.5.0
-Django==1.11
-django-bootstrap3==10.0.1
+Django==4.0.2
+django-bootstrap3==21.2
 django-heroku==0.3.1
 gunicorn==19.9.0
-Pillow==5.2.0
-psycopg2==2.7.5
-python-decouple==3.1
-pytz==2018.5
-whitenoise==4.0
+Pillow==9.1.1
+psycopg2==2.9.3
+python-decouple==3.6
+pytz==2022.1
+whitenoise==6.2.0
 ```
 If you are following along with the mtribune app you should use the provided `requirements.txt` as you need to install more python packages, for any app just make sure you have the above packages as a plus.
 
